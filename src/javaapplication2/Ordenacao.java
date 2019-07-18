@@ -11,7 +11,8 @@ public class Ordenacao {
 
         for (int i = 0; i < vetorDes.length; i++) {
             for (int j = 0; j < (vetorDes.length - 1); j++) {
-                if (vetorOrdenado[j] > vetorOrdenado[j + 1]) {
+                //"<>"altera a ordem crescente e decrescente.
+                if (vetorOrdenado[j] < vetorOrdenado[j + 1]) {
                     aux = vetorOrdenado[j];
                     vetorOrdenado[j] = vetorOrdenado[j + 1];
                     vetorOrdenado[j + 1] = aux;
